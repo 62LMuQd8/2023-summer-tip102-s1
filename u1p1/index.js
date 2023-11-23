@@ -1,5 +1,6 @@
 // implement requirements
 function containsDuplicate(nums) {
+    // use sets because unique elements property
     const set = new Set();
     for (const num of nums) {
         if (set.has(num)) {
