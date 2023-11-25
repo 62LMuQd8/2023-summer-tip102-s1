@@ -96,7 +96,7 @@ export class LinkedList {
   }
 
   // helper print function to validate implementation
-  print() {
+  toString() {
     let arrayEquivalent = [];
     let current = this.head;
     while (current !== null) {
@@ -106,7 +106,7 @@ export class LinkedList {
     return JSON.stringify(arrayEquivalent);
   }
 
-  printWithCycle() {
+  toStringWithCycle() {
     let arrayEquivalent = [];
     let current = this.head;
     for (let i = 0; i < this.length; i++) {
