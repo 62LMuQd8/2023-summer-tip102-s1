@@ -104,6 +104,7 @@ export class TreeService {
         }
     }
 
+    // read details on min depth: https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/
     minDepth() {
       // get depth of shortest root to leaf path by recursion
       return depth(this.root);
