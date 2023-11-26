@@ -118,7 +118,7 @@ export class TreeService {
         //    10  11
         if (root === null) return 0;
         // parent node picks child with greatest depth to calc its own depth
-        // between a parent and child node, the depth is 1
+        // between a parent and child node, the depth is 2
         return Math.max(depth(root.left), depth(root.right)) + 1;
       }
     }
