@@ -112,7 +112,7 @@ export class TreeService {
         function invert(root) {
             // we have reached a null node - base case
             if (root === null) return;
-            // invert lowest level subtree first
+            // invert lowest level subtree first (postorder traversal - used for tree deletion)
             // in other words, starting at the leaves and swapping our way up
             // (alternatively, we can start from root and swap our way down)
             //
@@ -129,7 +129,7 @@ export class TreeService {
             // if we swap the child nodes at node 2
             // before we traverse the right subtree
             // the algorithm will miss the subtree entirely
-            // which is not correct
+            // which is not correct (inorder traversal - used for get keys in ascending order)
             //
             invert(root.left);
             invert(root.right);
