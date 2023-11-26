@@ -131,6 +131,12 @@ export class TreeService {
             // the algorithm will miss the subtree entirely
             // which is not correct (inorder traversal - used for get keys in ascending order)
             //
+            // inorder, preorder, postorder are defined on binary search trees (constraints on the tree)
+            // read more here:
+            // https://www.geeksforgeeks.org/inorder-traversal-of-binary-tree/
+            // https://www.geeksforgeeks.org/preorder-traversal-of-binary-tree/
+            // https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/
+            //
             invert(root.left);
             invert(root.right);
             // swap nodes
