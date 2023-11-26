@@ -116,7 +116,7 @@ export class TreeService {
             // in other words, starting at the leaves and swapping our way up
             // (alternatively, we can start from root and swap our way down)
             //
-            // note in general:
+            // note in general (not a binary search tree):
             //
             //       1
             //     /   \
