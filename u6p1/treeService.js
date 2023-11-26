@@ -105,12 +105,18 @@ export class TreeService {
     }
 
     invertTree() {
+        // inversion means to flip the tree vertically
+        // as if placing a mirror vertically next to the tree
+        // or reflecting the tree about the vertical axis
         invert(this.root);
         function invert(root) {
             // we have reached a null node - base case
             if (root === null) return;
             // invert lowest level subtree first
-            // for example,
+            // in other words, starting at the leaves and swapping our way up
+            // (alternatively, we can start from root and swap our way down)
+            //
+            // note in general:
             //
             //       1
             //     /   \
