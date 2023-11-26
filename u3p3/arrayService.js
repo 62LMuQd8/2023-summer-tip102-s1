@@ -4,6 +4,7 @@ export class ArrayService {
     // in case m = m + n, then we are not merging any nums from nums2, and return nums1 as is
     // most cases are m < m + n
     // we use three pointers for this problem
+    // and we start inserting at the end to avoid overwriting nums in nums1 array
     static merge(nums1, m, nums2, n) {
         // first pointer starts at the end of list of nums to merge in nums1 array
         let endOfList1 = m - 1;
