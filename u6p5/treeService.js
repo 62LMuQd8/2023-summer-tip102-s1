@@ -104,6 +104,37 @@ export class TreeService {
         }
     }
 
+    // this function creates a balanced binary tree from an array
+    //
+    // note 1: this is NOT a self-balancing algorithm, such as AVL or red-back trees,
+    // where the tree will self-balance on inserts and deletes,
+    // the tree from the function is balanaced on creation,
+    // but subsequence operations may unbalance the tree
+    //
+    // note 2: if we insert a sorted array (ascending) without performing a binary search first,
+    // then instead of a balanced binary tree, we get a linked list, e.g.
+    //
+    // inserting from the start of this array
+    // [1, 2, 3, 4, 5]    creates a linked list
+    //
+    //            1
+    //             \
+    //              2
+    //               \
+    //                3
+    //                 \
+    //                  4
+    //                   \
+    //                    5
+    //
+    // instead of a balanced binary tree
+    //
+    //            3
+    //           / \
+    //          1   4
+    //           \   \
+    //            2   5
+    //
     static balancedBSTFromArray(nums) {
       let tree = new TreeService();
       tree.root = balanced(0, nums.length - 1);
