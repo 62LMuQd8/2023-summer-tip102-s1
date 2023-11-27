@@ -135,6 +135,8 @@ export class TreeService {
     //           \   \
     //            2   5
     //
+    // balanced binary tree optimizes searches (2 hops instead of n hops)
+    //
     static balancedBSTFromArray(nums) {
       let tree = new TreeService();
       tree.root = balanced(0, nums.length - 1);
