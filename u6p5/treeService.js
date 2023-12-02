@@ -135,7 +135,9 @@ export class TreeService {
     //           \   \
     //            2   5
     //
-    // balanced binary tree optimizes searches (2 hops instead of n hops)
+    // balanced binary tree optimizes searches,
+    // O(logN) or 2 hops instead of N or 5 hops
+    // (the difference becomes apparent as data N scales)
     //
     static balancedBSTFromArray(nums) {
       let tree = new TreeService();
