@@ -132,6 +132,10 @@ export class TreeService {
       console.log(result);
     }
 
+    // read references:
+    // https://guides.codepath.org/compsci/Lowest-Common-Ancestor-of-a-Binary-Tree
+    // https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+    //
     // conditions:
     // 1. p and q are guaranteed to exist
     // 2. a node is allowed to be a descendant of itself
