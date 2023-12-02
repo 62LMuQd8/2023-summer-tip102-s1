@@ -156,7 +156,7 @@ export class TreeService {
         // so if a child node needs a coin, and the parent node only has one coin,
         // then the net balance remains -1, and the number of moves added to the total number of moves is 1
         // b/c one coin must pass through the parent node to reach the child node,
-        // and if the parent node has two coins, then the net balance is 0
+        // and if the parent node has two coins, then the net balance is 0 = (-1) + (+1)
         // b/c the parent node was able to send the child node a coin (or child node received a coin)
         // based on this reasoning, the magnitude of the net balance
         // represents the min number of moves at a given node needed to balance coins across the tree
