@@ -187,6 +187,8 @@ export class TreeService {
     //          /
     //        -5
     //
+    // time complexity is O(n) b/c we visit each node once
+    //
     pathSumHM(targetSum) {
       let map = new Map();
       // partial sums always begin with 0 = S(0)
