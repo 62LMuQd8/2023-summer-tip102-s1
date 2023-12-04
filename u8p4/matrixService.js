@@ -25,7 +25,8 @@ export class MatrixService {
             for (let i = top + 1; i <= bottom; i++) result.push(m[i][right]);
 
             // (we have tried to walk in the horizontal axis, from left to right
-            // and we have tried to walk in the vertical axis, from top to bottom)
+            // and we have tried to walk in the vertical axis, from top to bottom,
+            // now will we try to walk along the axes again but in opposite directions)
             
             // and from the bottom right, visit each element from right to left
             // (in other words, if we are at a different row than when we traversed from left to right,
