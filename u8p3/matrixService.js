@@ -2,6 +2,7 @@ export class MatrixService {
     // see CodePath explanation: https://guides.codepath.org/compsci/Rotate-Image
     // contains helpful diagrams to help visualize index and rotations
     //
+    // rotate image (90 degrees) in clockwise direction
     static rotateImage(m) {
         // start rotation from the outer ring
         // by looking at column index
