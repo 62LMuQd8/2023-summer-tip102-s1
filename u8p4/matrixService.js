@@ -4,7 +4,7 @@ export class MatrixService {
     // a good idea is to consider the following when adding unit tests:
     //
     // 1. when m and n both equal 1, in other words, matrix contains only 1 element
-    // 2. when either m or n equals 1, in other words, the matrix is either horizontal or vertial
+    // 2. when either m or n equals 1, in other words, the matrix is either 1 row or 1 column
     // 3. when m and n both are greater than 1
     //
     static getSpiralOrder(m) {
@@ -17,11 +17,11 @@ export class MatrixService {
         // keep walking around perimeter at each level until all elements visited
         while (result.length < m.length * m[0].length) {
             // start at top left and visit each element from left to right,
-            // (in other words, first try walking in the horizontal axis)
+            // (in other words, first try walking in the horizontal axis, from left to right)
             for (let i = left; i <= right; i++) result.push(m[top][i]);
             
             // then from the top right, visit each element from top to bottom
-            // (in other words, then try walking in the vertical axis)
+            // (in other words, then try walking in the vertical axis, from top to bottom)
             for (let i = top + 1; i <= bottom; i++) result.push(m[i][right]);
 
             // (we have tried to walk in the horizontal axis, from left to right
@@ -29,12 +29,12 @@ export class MatrixService {
             
             // and from the bottom right, visit each element from right to left
             // (in other words, if we are at a different row than when we traversed from left to right,
-            // then visit each element from left to right)
+            // then visit each element from right to left)
             if (top < bottom) {
                 for (let i = right - 1; i >= left; i--) result.push(m[bottom][i]);
             }
 
-            // finally from bottom left, vistion each element from bottom to top
+            // finally from bottom left, visit each element from bottom to top
             // (in other words, if we are at a different column than when we traversed from top to bottom,
             // then visit each element from bottom to top)
             if (left < right) {
