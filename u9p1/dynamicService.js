@@ -25,7 +25,9 @@ export class DynamicService {
                 // then we would have the fibonacci numbers needed to compute the remaining nodes
                 // in order to return to the root node which is the fibonacci number that we want
                 // this makes the problem a dynamic programming problem instead of a divide & conquer problem
-                // b/c there are overlapping subproblems where the answers can be stored and reused
+                // b/c there are overlapping subproblems where the answers can be stored and reused,
+                // and b/c in-memory storage is used, this transforms the approach from
+                // exponential time complexity O(2^n) to linear time complexity O(n)
                 let fib = fibonacci(n - 1) + fibonacci(n - 2);
                 // and store the answer into the map
                 map.set(n, fib);
