@@ -41,7 +41,8 @@ export class DynamicService {
     }
 
     // note: tail recursion can also be used here for more elegant code,
-    // https://stackoverflow.com/a/10628914 (not implemented in the code below),
+    // https://stackoverflow.com/a/10628914 (not implemented in the code below,
+    // and link shows row-based solution, problem statement asks for index-based solution),
     // which transforms the approach to be more like top down than bottom up
     // (distinctions that may be rule of thumb or convention rather than rules)
     //
