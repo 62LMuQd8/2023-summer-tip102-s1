@@ -6,12 +6,12 @@ export class DynamicService {
         let currentRow = [];
         // construct coefficients for each row
         // note: numRows is number of rows, so first number starts at 1
-        for (let i = 0; i < numRows; i++) {
+        for (let n = 1; n <= numRows; n++) {
             // start row with 1 at the beginning of array
             // with coefficients from previous row
             currentRow.unshift(1);
             // starting at the next coefficient
-            for (let j = 1; j < currentRow.length - 1; j++) {
+            for (let i = 1; i < currentRow.length - 1; i++) {
                 // the current coefficient is sum of the two coefficients above it
                 // (currentRow holds the coefficients of the previous row,
                 // we are overwriting the coefficients of the previous row
@@ -36,7 +36,7 @@ export class DynamicService {
                 // 4. continue moving across the previous row, adding and overwriting the coefficients
                 //    until the last coefficient which should always be a 1
                 //
-                currentRow[j] = currentRow[j] + currentRow[j + 1];
+                currentRow[i] = currentRow[i] + currentRow[i + 1];
             }
             // append current row to the resulting triangle
             pascalsTriangle.push(JSON.parse(JSON.stringify(currentRow)));
