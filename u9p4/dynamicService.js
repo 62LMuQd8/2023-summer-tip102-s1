@@ -44,8 +44,10 @@ export class DynamicService {
         return pascalsTriangle;
     }
 
-    // note: tail recursion can also be used here for more elegant code to top down approach
-    // https://stackoverflow.com/a/10628914 (not implemented in the code below)
+    // note: tail recursion can also be used here for more elegant code,
+    // https://stackoverflow.com/a/10628914 (not implemented in the code below),
+    // which transforms the approach to be more like top down than bottom up
+    // (distinctions that may be rule of thumb or convention rather than rules)
     //
     static printTriangleRecursion(numRows) {
         pascal(numRows);
