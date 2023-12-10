@@ -5,6 +5,7 @@ export class DynamicService {
         let pascalsTriangle = [];
         let currentRow = [];
         // construct coefficients for each row
+        // note: numRows is number of rows, so first number starts at 1
         for (let i = 0; i < numRows; i++) {
             // start row with 1 at the beginning of array
             // with coefficients from previous row
