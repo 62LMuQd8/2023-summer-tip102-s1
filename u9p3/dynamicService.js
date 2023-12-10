@@ -52,6 +52,9 @@ export class DynamicService {
         // cache rolling lowest buy prices
         // note: instead of a table, we can also just track the most recent minPrice to decrease space,
         // when we buy and sell on the same day, the profit is 0
+        // (one of the conditions in the problem statement is that buying and selling
+        // occur on different days; however, to simplify the coding, we allow buying and selling
+        // to occur on the same day since this does not impact the final answer max profit)
         let minPrices = [];
         // at 0th day, the lowest buy price is prices[0]
         minPrices[0] = prices[0];
