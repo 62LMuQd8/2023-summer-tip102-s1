@@ -24,7 +24,7 @@ export class DynamicService {
                 // b/c we are concerned with only the minimum between two costs,
                 // e.g., if we add a constant cost C to each step so that
                 // the relative change in cost between steps does not change,
-                // the the new cost array would return the same steps or path needed to optimize cost
+                // then the new cost array would return the same steps or path needed to optimize cost
                 // as the cost array with negative costs,
                 // this shows that signs do not impact the result (or path traveled),
                 // the relative change in cost between steps impact the result (or path traveled)
@@ -39,7 +39,8 @@ export class DynamicService {
 
     static minCostIterative(cost) {
         // if cost array contains at most 2 steps
-        // then return cost of respective step
+        // then return cost of top of stairs
+        // (b/c we can reach top of stairs in one move, either one step forward, or two steps forward)
         if (cost.length <= 2) return cost[cost.length - 1];
         // table for tabulation
         let table = [];
@@ -53,7 +54,7 @@ export class DynamicService {
             // where the optimized cost to reach the current step is the
             // minimum between the minimum total cost of previous step and the step before the previous step,
             // b/c at each step, (after paying the cost) we can take either one step or two steps up the stairs
-            // (other in other words, the only way to get the current step is from the previous step
+            // (in other words, the only way to get to the current step is either from the previous step
             // or the step before the previous step)
             table.push(Math.min(table[i - 1], table[i - 2]) + cost[i]);
         }
