@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Reverse-Linked-List
+//
 // code template and explanation found here:
 // https://www.geeksforgeeks.org/implementation-linkedlist-javascript/
 import { ListElement } from './listElement.js'

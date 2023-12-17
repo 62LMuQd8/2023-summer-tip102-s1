@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Remove-Linked-List-Elements
+//
 // code template and explanation found here:
 // https://www.geeksforgeeks.org/implementation-linkedlist-javascript/
 import { ListElement } from './listElement.js'
