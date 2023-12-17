@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Crawler-Log-Folder
+//
 export class FolderService {
     static minOpRecursion(logs) {
         // we start at root
