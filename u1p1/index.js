@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Contains-Duplicates
+//
 // implement requirements
 function containsDuplicate(nums) {
     // use sets because unique elements property
