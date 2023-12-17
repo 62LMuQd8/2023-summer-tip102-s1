@@ -1,4 +1,6 @@
 export class MatrixService {
+    // read CodePath's explanation: https://guides.codepath.org/compsci/Transpose-Matrix
+    //
     // the transpose of the following matrix,
     //
     //      1     2     3
