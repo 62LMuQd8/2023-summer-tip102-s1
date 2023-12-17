@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Valid-Palindrome
+//
 export class StringService {
     static isPalindrome(s) {
         // front and back pointers
