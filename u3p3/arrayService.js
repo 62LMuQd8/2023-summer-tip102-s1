@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Merge-Sorted-Array
+//
 export class ArrayService {
     // this is conceptually the merge part of merge sort (recursive algorithm)
     // nums1 and nums2 are input lists that are already sorted in the way we want (ascending)
