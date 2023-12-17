@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Destination-City
+//
 export class Graphs {
     // assuming graphs are linear, there are no cycles
     static destCity(paths) {
