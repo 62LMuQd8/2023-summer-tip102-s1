@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Power-of-Four
+//
 export class MathService {
     // give integer n, determine if n is power of 4
     // an integer is power of 4, if there exists an integer x such n = 4^x
