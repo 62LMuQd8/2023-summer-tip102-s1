@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Roman-to-Integer
+//
 export class Roman {
     static convertInt(s) {
         // create map so that int val of roman numerals are O(1) lookups
