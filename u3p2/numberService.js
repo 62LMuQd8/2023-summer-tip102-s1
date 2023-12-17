@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Unique-Number-of-Occurrences
+//
 export class NumberService {
     static uniqueOccurrences(arr) {
         let map = new Map();
