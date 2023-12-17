@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Longest-Consecutive-Sequence
+//
 export class LongestSequence {
     static sortMethod(nums) {
         if (nums.length === 0) return 0;
