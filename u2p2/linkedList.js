@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Linked-List-Cycle
+//
 // code template and explanation found here:
 // https://www.geeksforgeeks.org/implementation-linkedlist-javascript/
 import { ListElement } from './listElement.js'
