@@ -1,4 +1,6 @@
 import { DataElement } from './dataElement.js';
+// read CodePath's explanation: https://guides.codepath.org/compsci/Binary-Tree-Inorder-Traversal
+//
 export class TreeService {
     constructor(arr) {
         // edge case - initialize tree as null node
