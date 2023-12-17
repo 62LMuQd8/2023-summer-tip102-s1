@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Shortest-Distance-To-a-Character
+//
 export class StringService {
     static shortestToChar(s, c) {
         let len = s.length;
