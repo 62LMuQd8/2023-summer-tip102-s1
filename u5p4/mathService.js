@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Pow(x,n)
+//
 export class MathService {
     // this makes use of exponential rules, ie,
     //
