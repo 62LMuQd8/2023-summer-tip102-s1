@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Valid-Palindrome-II
+//
 export class StringService {
     static validPalindrome(s) {
         // begin validation by checking outer most character pair, and then move inward
