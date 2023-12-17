@@ -1,4 +1,6 @@
 export class MatrixService {
+    // read CodePath's explanation: https://guides.codepath.org/compsci/Flood-Fill
+    //
     static floodFill(image, sr, sc, color) {
         // create visited map
         // without visited map, we would re-visit the locations we have already visited
