@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Two-Sum
+//
 // implement requirements
 // assume there is always one solution for each set of arguments
 function twoSum(nums, target) {
