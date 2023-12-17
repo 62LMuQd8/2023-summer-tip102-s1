@@ -1,4 +1,5 @@
 export class ArrayService {
+    // read CodePath's explanation: https://guides.codepath.org/compsci/Accounts-Merge
     static accountsMerge(accounts) {
         // holds the aggregated merged accounts
         let result = [];
