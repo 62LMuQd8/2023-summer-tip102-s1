@@ -1,4 +1,6 @@
 export class MatrixService {
+    // read CodePath's explanation: https://guides.codepath.org/compsci/Flipping-an-Image
+    //
     static flipImage(m) {
         // for each row
         for (let i = 0; i < m.length; i++) {
