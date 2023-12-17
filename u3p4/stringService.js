@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Is-Subsequence
+//
 export class StringService {
     static isSubsequence(s, t) {
         // two pointer method
