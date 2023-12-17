@@ -1,3 +1,5 @@
+// read CodePath's explanation: https://guides.codepath.org/compsci/Reverse-Words-in-a-String
+//
 export class StringService {
     static reverse(s) {
         let arr = [];
